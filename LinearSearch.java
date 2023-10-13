@@ -9,7 +9,6 @@ public class LinearSearch{
             i++;
         }
         return -1;
-
     }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
@@ -24,6 +23,9 @@ public class LinearSearch{
         int b=sc.nextInt();
         if(0 <= Search(arr,a,b)){
             System.out.print("Index is: "+ Search(arr,a,b));
+        }
+        else if(-1 <= Search(arr,a,b)){
+            System.out.print("Searching Element isn't in the array");
         }
     }
 }
